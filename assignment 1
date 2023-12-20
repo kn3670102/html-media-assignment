@@ -1,0 +1,143 @@
+Q1. Create one variable containing following type of data:
+(i) string
+(ii) list
+(iii) float
+(iv) tuple
+sol1.l# string
+my_string = "Hello, World!"
+
+# (ii) List
+my_list = [1, 2, 3, 4, 5]
+
+# (iii) Float
+my_float = 3.14
+
+# (iv) Tuple
+my_tuple = (10, 20, 30, 40, 50)
+print("String:", my_string)
+print("List:", my_list)
+print("Float:", my_float)
+print("Tuple:", my_tuple)
+
+
+Q2.Given are some following variables containing data:
+(i) var1 = ‘ ‘
+(ii) var2 = ‘[ DS , ML , Python]’
+(iii) var3 = [ ‘DS’ , ’ML’ , ‘Python’ ]
+(iv) var4 = 1.
+What will be the data type of the above given variable.
+sol1=string
+sol2=string
+sol3=list
+sol4=float
+
+Q3. Explain the use of the following operators using an example:
+(i) /
+(ii) %
+(iii) //
+(iv) **
+sol 1.result = 10 / 2
+print(result)
+operator=divide operator 
+sol2.remainder = 10 % 3
+print(remainder)
+Remainder operator
+sol3.quotient = 10 // 3
+print(quotient)
+Quotient operator
+sol4.result = 2 ** 3  # 2 raised to the power of 3
+print(result)
+exponentiation
+
+Q4. Create a list of length 10 of your choice containing multiple types of data. Using for loop print the
+element and its data type.
+l=["mayank","nisha",10.39,'none',76,54,3,"open","king","peigon",89,67,76]
+for i in l:
+  print(type(i))
+  
+Q5. Using a while loop, verify if the number A is purely divisible by number B and if so then how many
+times it can be divisible.
+sol:
+A = int(input("Enter the value of A: "))
+B = int(input("Enter the value of B: "))
+
+# Initialize a counter for the number of divisions
+divisions_count = 0
+
+# Check if B is not zero and A is divisible by B
+while B != 0 and A % B == 0:
+    # Perform division
+    A = A / B
+    
+    # Increment the counter
+    divisions_count += 1
+
+# Display the result
+if B == 0:
+    print("Cannot divide by zero.")
+else:
+    print(f"A is divisible by B {divisions_count} times.")
+
+Q6.Create a list containing 25 int type data. Using for loop and if-else condition print if the element is
+divisible by 3 or not.
+sol:l=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,11,16,17,18,19,20,21,22,23,24,25]
+for i in l:
+  if i % 3 ==0:
+  print("divisible by 3",i)
+  else:
+  print("it is not divisible by 3",i)
+ 
+Q7. What do you understand about mutable and immutable data types? Give examples for both showing
+this property.
+ 
+Mutable and immutable are terms used to describe whether an object's state can be modified after it is created. In programming, this concept is often associated with data types.
+
+Mutable Data Types:
+
+Mutable objects are objects whose value or state can be changed after they are created.
+Lists, dictionaries, and sets in Python are examples of mutable data types.
+When you modify a mutable object, you are actually changing the existing object in memory.
+Example:
+ # Mutable data type: List
+mutable_list = [1, 2, 3, 4]
+print("Original List:", mutable_list)
+
+# Modifying the list
+mutable_list[2] = 99
+print("Modified List:", mutable_list)
+Immutable Data Types:
+
+Immutable objects are objects whose state cannot be changed after they are created.
+Examples of immutable data types in Python include integers, floats, strings, tuples, and frozensets.
+When you modify an immutable object, you are creating a new object in memory.
+Example:
+# Immutable data type: Tuple
+immutable_tuple = (1, 2, 3, 4)
+print("Original Tuple:", immutable_tuple)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
